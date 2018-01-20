@@ -38,8 +38,6 @@ class Prices extends Component {
 
     return(
       <div>
-        {list}
-        <br />
         <select 
           onChange={e => this.setState({
             currency: e.target.value
@@ -50,6 +48,9 @@ class Prices extends Component {
           <option value='GBP'>GBP</option>
           <option value='EUR'>EUR</option>
         </select>
+        <br />
+        {list}
+        <br />
       </div>
     );
   }
