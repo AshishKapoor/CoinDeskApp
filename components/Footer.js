@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div>
-      <p>footer anyone?</p>
+    <div className='jumbotron'>
+      <p style={{ textAlign: 'center' }}>footer anyone?</p>
     </div>
   );
 }
