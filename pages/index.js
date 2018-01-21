@@ -6,7 +6,7 @@ const Index = (props) => {
   return ( 
     <Layout>
       <div>
-        <h1>CoinDeskApp</h1>
+        <h1>CoinDesk</h1>
         <Prices values={props.bpi} />
       </div>
     </Layout>
@@ -14,7 +14,7 @@ const Index = (props) => {
 }
 
 Index.getInitialProps = async function () {
-  const response = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
+  const response = await Fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
   const data = await response.json();
   return {
     bpi: data
